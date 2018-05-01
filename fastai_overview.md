@@ -118,8 +118,8 @@ data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
 learn = ConvLearner.pretrained(arch, data, precompute=True)
 learn.fit(0.01, 2)
 ```
-![alt text](./images/cat.4319.jpg "Example Cat")
-![alt text](./images/dog.1614.jpg "Example Dog")
+<img src="./images/cat.4319.jpg"  width="450">
+<img src="./images/dog.1614.jpg"  width="450">
 ---
 
 ## Train - Validation - Test
