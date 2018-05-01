@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>reveal-md</title>
+        <title>Fast.ai MOOC</title>
         <link rel="stylesheet" href="./css/reveal.css">
-        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
         <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
 
@@ -12,7 +12,9 @@
     <body>
 
         <div class="reveal">
-            <div class="slides"><section  data-markdown><script type="text/template"><img src="./images/Digital_Trans_Flyer_Final.png"  width="650"></script></section><section  data-markdown><script type="text/template">## Tampa.ai
+            <div class="slides"><section  data-markdown><script type="text/template">
+
+<img src="./images/Digital_Trans_Flyer_Final.png"  width="650"></script></section><section  data-markdown><script type="text/template">## Tampa.ai
 
 Looking for Presenters
 </script></section><section  data-markdown><script type="text/template">## Intro
@@ -109,7 +111,7 @@ learn.fit(0.01, 2)
 
 <img src="./images/slice_of_bread.jpg"  width="300"></script></section><section  data-markdown><script type="text/template">## Differentiable Layers
 Stacks of differentiable non-linear functions
-<img src="./images/Arch_layers.png"  width="300">
+<img src="./images/Arch_Layers.png"  width="300">
 
 With Lots of Parameters
 
@@ -227,7 +229,9 @@ Forest implementations for the same problem</script></section><section  data-mar
 
 [#PrettyInGan](https://mobile.twitter.com/glagolista)
 
-[Stochastic Weight Averaging - Alternative to Ensembling](https://towardsdatascience.com/stochastic-weight-averaging-a-new-way-to-get-state-of-the-art-results-in-deep-learning-c639ccf36a)</script></section><section  data-markdown><script type="text/template">## Tips
+[Stochastic Weight Averaging - Alternative to Ensembling](https://towardsdatascience.com/stochastic-weight-averaging-a-new-way-to-get-state-of-the-art-results-in-deep-learning-c639ccf36a)
+
+[Numpy Array Programming](https://realpython.com/numpy-array-programming/)</script></section><section  data-markdown><script type="text/template">## Tips
 Create separate folders for your work
 <img src="./images/SampleProjectFastAILink.png"  width="400">
 * Link to the Fastai project
@@ -308,7 +312,7 @@ Super-resolution</script></section><section  data-markdown><script type="text/te
             // options from URL query string
             var queryOptions = Reveal.getQueryHash() || {};
 
-            var options = {};
+            var options = {"transition":"fade"};
             options = extend(defaultOptions, options, queryOptions);
         </script>
 

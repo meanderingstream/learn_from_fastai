@@ -1,3 +1,10 @@
+---
+title: Fast.ai MOOC
+theme: solarized
+revealOptions:
+    transition: 'fade'
+---
+
 <img src="./images/Digital_Trans_Flyer_Final.png"  width="650">
 ---
 ## Tampa.ai
@@ -137,7 +144,7 @@ Batches and Inference
 ---
 ## Differentiable Layers
 Stacks of differentiable non-linear functions
-<img src="./images/Arch_layers.png"  width="300">
+<img src="./images/Arch_Layers.png"  width="300">
 
 With Lots of Parameters
 
@@ -290,6 +297,8 @@ Forest implementations for the same problem
 [#PrettyInGan](https://mobile.twitter.com/glagolista)
 
 [Stochastic Weight Averaging - Alternative to Ensembling](https://towardsdatascience.com/stochastic-weight-averaging-a-new-way-to-get-state-of-the-art-results-in-deep-learning-c639ccf36a)
+
+[Numpy Array Programming](https://realpython.com/numpy-array-programming/)
 ---
 ## Tips
 Create separate folders for your work
