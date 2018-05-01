@@ -1,6 +1,6 @@
 ---
 title: Fast.ai MOOC
-theme: solarized
+theme: moon
 revealOptions:
     transition: 'fade'
 ---
@@ -125,8 +125,8 @@ data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
 learn = ConvLearner.pretrained(arch, data, precompute=True)
 learn.fit(0.01, 2)
 ```
-<img src="./images/cat.4319.jpg"  width="450">
-<img src="./images/dog.1614.jpg"  width="450">
+<img src="./images/cat.4319.jpg"  width="350">
+<img src="./images/dog.1614.jpg"  width="350">
 ---
 
 ## Train - Validation - Test
