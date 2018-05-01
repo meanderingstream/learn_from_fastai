@@ -1,7 +1,0 @@
-Title: What can you learn from the Fast.ai MOOC?
-
-We’ll cover a quick flyby of the concepts taught in the free course and provide some useful insights and supplemental resources.
-
-Developer?  Fast.ai breaks several myths about Deep Learning.  You don’t have to have a PhD to utilize Deep Learning.  With a year of development experience and if you are a self-starter, you can grow into a Machine Learning practitioner using the concepts taught in Part 1 and Part 2.
-
-Not a Developer?  Included in Fast.ai is a section on deep learning using structured data.  Structured data is the combination of continuous and categorical values.  Many enterprises have a trove of categorical and numerical data where Deep Learning could be used.  Come learn about how Deep Learning can be applied on typical enterprise data.
