@@ -66,11 +66,11 @@ Rossman
 
 Equadorian Grocery Store (Favorita)
 
-<img src="./images/rossman.png"  width="800">
+<img src="./images/Rossman.png"  width="800">
 ---
 ## Language Model
 IMDB Reviews
-<img src="./images/review.png"  width="800">
+<img src="./images/Review.png"  width="800">
 * Train the Language Model to Predict the Next Word
 
 ---
