@@ -234,6 +234,8 @@ emb_szs = [(c, min(50, (c+1)//2)) for _,c in cat_sz]
 ---
 ## Step 5: Get Learner
 ```python
+# def get_learner(self, emb_szs, n_cont, emb_drop, out_sz, szs, drops,
+#                    y_range=None, use_bn=False, **kwargs):
 m = md.get_learner(emb_szs, len(df.columns)-len(cat_vars),
                    0.04, 1, [1000,500], [0.001,0.01], y_range=y_range)
 ```
@@ -244,6 +246,12 @@ m.fit(lr, 3, metrics=[exp_rmspe])
 ```
 > Before Fast.ai, had to create all of this logic by hand each time
 
+---
+## Embeddings Improves Shallow Learning
+
+Rossman paper showed that using the Embeddings from Neural Net
+Improved the performance of the Gradient Boosting and Random
+Forest implementations for the same problem
 ---
 ## Kaggle Competitions
 [kaggle.com/competitions](https://www.kaggle.com/competitions)
@@ -266,9 +274,22 @@ m.fit(lr, 3, metrics=[exp_rmspe])
 
 [Fast AI/Pytorch in Production](http://forums.fast.ai/t/using-a-fast-ai-model-in-production/12033/6)
 
-[Fast.ai Machine Learning Discussion](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
+[Fast.ai Machine Learning Discussion - Early Access Videos](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
 
-[An Introduction to Deep Learning for Tabular Data](http://www.fast.ai/2018/04/29/categorical-embeddings/)
+[An Introduction to Deep Learning for Tabular Data](http://www.fast.ai/2018/04/29/categorical-embeddings)
+
+[Google Images Download](https://github.com/hardikvasa/google-images-download)
+
+[Best of Jupyter](https://github.com/NirantK/best-of-jupyter)
+
+---
+## More Resources
+
+[Yet Another Pandas Tutorial](https://www.kaggle.com/shikhar1/yet-another-pandas-tutorial)
+
+[#PrettyInGan](https://mobile.twitter.com/glagolista)
+
+[Stochastic Weight Averaging - Alternative to Ensembling](https://towardsdatascience.com/stochastic-weight-averaging-a-new-way-to-get-state-of-the-art-results-in-deep-learning-c639ccf36a)
 ---
 ## Tips
 Create separate folders for your work
