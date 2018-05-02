@@ -7,14 +7,14 @@ revealOptions:
 
 <img src="./images/Digital_Trans_Flyer_Final.png"  width="650">
 ---
-## Tampa.ai
-
-Looking for Presenters
-
----
 ## Intro
 
 smueller.tampa.ai@gmail.com
+
+---
+## Tampa.ai
+
+Looking for Presenters
 
 ---
 # What can you learn from Fast.ai MOOC
@@ -56,7 +56,7 @@ The Drivetrain Approach: A four-step process for building data products
 ---
 ## Problems to Solve
 * Image Classification
-* Structured Data
+* Structured/Tabular Data
 * Language Model
 * Sentiment Analysis 
 * Recommendations
@@ -68,130 +68,31 @@ The Drivetrain Approach: A four-step process for building data products
 <img src="./images/whale_fluke.jpg"  width="300">
 <img src="./images/amazon_forest.png"  width="300">
 ---
-## Structured Data
+## Structured/Tabular Data
+Business Data
+
+* Deep Learning for Categorical and Continuous Values
+   
 Rossman
 
 Equadorian Grocery Store (Favorita)
 
+Fifth Place Kaggle result using Fast.ai
+
 <img src="./images/Rossman.png"  width="800">
----
-## Language Model
-IMDB Reviews
-<img src="./images/Review.png"  width="800">
-* Train the Language Model to Predict the Next Word
-
----
-## Fine-tune from Existing Language Model
-* Fine-tune for Sentiment Analysis
-
-[FitLAM Paper](https://arxiv.org/abs/1801.06146)
----
-## Sentiment Analysis
-Sentiment of Movie Reviews
-<img src="./images/SoTA_Sentiment.png"  width="800">
-* Better than Any Other Research
-* Models how Words Relate and can Categorize the Sentiment Better
----
-## Applying Sentiment Analysis
-Law: Read Discovery -> Categorize document
-
-Medical: Medical Language Model -> Fine Tune on Cancer Research
----
-## Recommendation Engine
-<img src="./images/movies.jpg"  width="400">
-Notes: used for lots of user content, Apple News, Facebook Newsfeed
----
-## Character Prediction
-* Recurrent Neural Network
-* GRU and LSTM
-<img src="./images/generated_nietzsche.png"  width="800">
-Notes: Used to teach RNN and indicate it isn't that complex
----
-## Concepts
-* Initial Success
-* Validation & Test
-* Differentiable Layers
-* Transfer Learning
-* Handling Overfitting
-* Structured Data
-* Architecture Design
-* Kaggle Competitions
----
-## Initial Success
-* Four lines of Code
-```python
-arch=resnet34
-data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
-learn = ConvLearner.pretrained(arch, data, precompute=True)
-learn.fit(0.01, 2)
-```
-<img src="./images/cat.4319.jpg"  width="350">
-<img src="./images/dog.1614.jpg"  width="350">
----
-
-## Train - Validation - Test
-<img src="./images/HugeLoaf.png"  width="800">
-<img src="./images/TVT_label.png"  width="800">
-
-[Fast.ai Validation Sets](http://www.fast.ai/2017/11/13/validation-sets/)
----
-Batches and Inference
-* Mini-batch
-<img src="./images/minibatch.png"  width="800">
-* Inference/Prediction
-
-<img src="./images/slice_of_bread.jpg"  width="300">
----
-## Differentiable Layers
-Stacks of differentiable non-linear functions
-<img src="./images/Arch_Layers.png"  width="300">
-
-With Lots of Parameters
-
-Solve Nearly any Predictive Modeling Problem
-> Can we wait long enough?
----
-## Fast.ai API focused on User
-* Demystifies some hyperparameter choices - weight initialization
-
-* Provides good defaults for Information Provided
-
-  Final Activation Function from output data
-
----
-## Transfer Learning
-Replace the last layer and train
-Un-freeze lower layers -> Fine-turn layers with Differential Learning Rates
-
-<img src="./images/practical-deep-learning-16-638.jpg"  width="800">
-[original image](https://image.slidesharecdn.com/practicaldeeplearning-160329181459/95/practical-deep-learning-16-638.jpg)
----
-## Handling Overfitting
-* More data
-* Data Augmentation
-* Test Time Augmentation
-* Stochastic gradient decent with restarts
-* Start with smaller images
-* Weight Decay (L2 Regularization)
-> Dogs vs Cats -> 99.65% Accuracy 
----
-## Learning Rate Finder
-<img src="./images/learning_rate.png"  width="500">
-
-Order of Magnitude up from bottom 
----
-## Structured Data
-* Deep Learning for Categorical and Continuous Values
-   
-   Business Data
-   * A few published papers
-   * Used in industry
-   * TWIML  #124 Jeff Dean ~24:00
-
 ---
 ## Denormalize Your Data
 <img src="./images/database_relations.png"  width="500">
 <img src="./images/Rossman.png"  width="500">
+---
+## Categorical Data becomes Embedding Data
+
+* Levels become continuous values
+
+ [0.20, 0.82, 0.45, 0.67]
+
+* Relationship between Categories in the Embedding
+* Easier for Neural Net to process
 ---
 ## Special Categorical
 * Date
@@ -260,10 +161,6 @@ Rossman paper showed that using the Embeddings from Neural Net
 Improved the performance of the Gradient Boosting and Random
 Forest implementations for the same problem
 ---
-## Kaggle Competitions
-[kaggle.com/competitions](https://www.kaggle.com/competitions)
-<img src="./images/KaggleCompetitions.png"  width="600">
----
 ## Feature Importance In Structure Data Networks
 (http://parrt.cs.usfca.edu/doc/rf-importance/index.html)
 >To get reliable results in Python, use permutation importance
@@ -275,6 +172,97 @@ Forest implementations for the same problem
 * Method to reorder a column
 * Retains the distribution
 > Impact of Loss represents importance
+---
+## Language Model
+IMDB Reviews
+<img src="./images/Review.png"  width="800">
+* Train the Language Model to Predict the Next Word
+
+---
+## Fine-tune from Existing Language Model
+* Fine-tune for Sentiment Analysis
+
+[FitLAM Paper](https://arxiv.org/abs/1801.06146)
+---
+## Sentiment Analysis
+Sentiment of Movie Reviews
+<img src="./images/SoTA_Sentiment.png"  width="800">
+* Better than Any Other Research
+* Models how Words Relate and can Categorize the Sentiment Better
+---
+## Applying Sentiment Analysis
+Law: Read Discovery -> Categorize document
+
+Medical: Medical Language Model -> Fine Tune on Cancer Research
+---
+## Recommendation Engine
+<img src="./images/movies.jpg"  width="400">
+Notes: used for lots of user content, Apple News, Facebook Newsfeed
+---
+## Character Prediction
+* Recurrent Neural Network
+* GRU and LSTM
+<img src="./images/generated_nietzsche.png"  width="800">
+Notes: Used to teach RNN and indicate it isn't that complex
+---
+## Concepts
+* Initial Success
+* Validation & Test
+* Transfer Learning
+* Handling Overfitting
+* Structured Data
+* Architecture Design
+* Kaggle Competitions
+---
+## Initial Success
+* Four lines of Code
+```python
+arch=resnet34
+data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
+learn = ConvLearner.pretrained(arch, data, precompute=True)
+learn.fit(0.01, 2)
+```
+<img src="./images/cat.4319.jpg"  width="350">
+<img src="./images/dog.1614.jpg"  width="350">
+---
+
+## Train - Validation - Test
+<img src="./images/HugeLoaf.png"  width="800">
+<img src="./images/TVT_label.png"  width="800">
+
+[Fast.ai Validation Sets](http://www.fast.ai/2017/11/13/validation-sets/)
+---
+Batches and Inference
+* Mini-batch
+<img src="./images/minibatch.png"  width="800">
+* Inference/Prediction
+
+<img src="./images/slice_of_bread.jpg"  width="300">
+---
+## Transfer Learning
+Replace the last layer and train
+Un-freeze lower layers -> Fine-turn layers with Differential Learning Rates
+
+<img src="./images/practical-deep-learning-16-638.jpg"  width="800">
+[original image](https://image.slidesharecdn.com/practicaldeeplearning-160329181459/95/practical-deep-learning-16-638.jpg)
+---
+## Handling Overfitting
+* More data
+* Data Augmentation
+* Test Time Augmentation
+* Stochastic gradient decent with restarts
+* Start with smaller images
+* Weight Decay (L2 Regularization)
+> Dogs vs Cats -> 99.65% Accuracy 
+---
+## Learning Rate Finder
+<img src="./images/learning_rate.png"  width="500">
+
+Order of Magnitude up from bottom 
+---
+## Kaggle Competitions
+[kaggle.com/competitions](https://www.kaggle.com/competitions)
+<img src="./images/KaggleCompetitions.png"  width="600">
 ---
 ## Resources
 [Student Notes on Fast.ai Part 1](https://github.com/reshamas/fastai_deeplearn_part1)
