@@ -11,6 +11,9 @@ revealOptions:
 
 smueller.tampa.ai@gmail.com
 
+[AI-Tampa Slack Invite](https://join.slack.com/t/ai-tampa/shared_invite/enQtMzU2Mzk4NTQ1Mzc3LWZkZWJhZTMwMWFhNzY2MmI2NzIzMDM0MWZmMDY1Y2U5YzJiZDNhZDBkN2Q4ZWU0ZmNhYzI1N2FhZmI3NzQyNzM)
+
+[AI-Tampa on Twitter](https://twitter.com/AiTampa)
 ---
 ## Tampa.ai
 
@@ -336,7 +339,7 @@ Super-resolution
 
 ---
 ## Study Group
-* Slack
+* [AI-Tampa Slack Invite](https://join.slack.com/t/ai-tampa/shared_invite/enQtMzU2Mzk4NTQ1Mzc3LWZkZWJhZTMwMWFhNzY2MmI2NzIzMDM0MWZmMDY1Y2U5YzJiZDNhZDBkN2Q4ZWU0ZmNhYzI1N2FhZmI3NzQyNzM)
 * Show and Tell Meetings
 ---
 ## Show and Tell on Challenges
