@@ -4,9 +4,6 @@ theme: moon
 revealOptions:
     transition: 'fade'
 ---
-
-<img src="./images/Digital_Trans_Flyer_Final.png"  width="650">
----
 ## Intro
 
 smueller.tampa.ai@gmail.com
@@ -80,7 +77,7 @@ Rossman
 
 Equadorian Grocery Store (Favorita)
 
-Fifth Place Kaggle result using Fast.ai
+Fifth Place Kaggle result
 
 <img src="./images/Rossman.png"  width="800">
 ---
@@ -207,6 +204,15 @@ Notes: used for lots of user content, Apple News, Facebook Newsfeed
 * GRU and LSTM
 <img src="./images/generated_nietzsche.png"  width="800">
 Notes: Used to teach RNN and indicate it isn't that complex
+---
+## Fairness, Questions and Ethics
+* Bias in Products
+
+[Questions and Ethics in Lesson 13](https://youtu.be/xXXiC4YRGrQ?t=2130) 
+
+[AI/ML Ethics, Biases & Responsibility Forum Topic](http://forums.fast.ai/t/ai-ml-ethics-biases-responsibility/14796/13)
+
+
 ---
 ## Concepts
 * Initial Success
